@@ -1,0 +1,14 @@
+body {
+    background-color: #341356;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#django-logo {
+    width: 5%;
+    height: 5%;
+}

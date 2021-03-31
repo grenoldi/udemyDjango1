@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Udemy Django: Projeto 1</title>
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <center>
+        <h1>Index</h1>
+        <div>
+            <img id="django-logo" src="static/img/django-hexbin.png">
+            <h2>{{ curso }}</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for produto in produtos %}
+                <tr>
+                    <td><a href="produto/{{ produto.id }}">{{ produto.name }}</a> </td>
+                    <td>{{ produto.price }}</td>
+                    <td>{{ produto.quantity }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <button onclick="teste();">Clique aqui</button>
+    </center>
+
+    <script type="text/javascript" src="static/js/index.js"></script>
+</body>
+</html>

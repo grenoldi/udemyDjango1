@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produto - {{ name }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+</head>
+<body>
+    <center>
+        <h1> - Nome: {{ name }}</h1>
+        <h2> - Preço: {{ price }}</h2>
+        <h2> - Quantidade: {{ quantity }}</h2>
+        <a href="{% url 'index' %}">Voltar</a>
+    </center>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+</body>
+</html>
